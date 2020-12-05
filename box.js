@@ -5,12 +5,14 @@ class Box {
           'friction':0.3,
           'density':1.0,
           'isStatic':false
+          
       }
       this.body = Bodies.rectangle(x, y, width, height, options);
       this.width = width;
       this.height = height;
       
       World.add(world, this.body);
+      this.visibility = 255
     }
     display(){
       var pos =this.body.position;
@@ -26,4 +28,9 @@ class Box {
         pop();
     }
     };
+    score(){
+      if (this.visibility < 0 && this.visibility > -105){
+        score++;
+      }
+    }
   }

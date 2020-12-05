@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
 var engine, world;
-
+var score=0;
 
 function preload() {
 
@@ -98,6 +98,34 @@ function draw() {
     box24.display();
     fill("purple")
     box25.display();
+    textSize(30)
+    text("Score " + score,100,100);
+    box2.score()
+    box3.score()
+    box4.score()
+    box5.score()
+    box6.score()
+    box7.score()
+    box8.score()
+    box9.score()
+    box10.score()
+    box11.score()
+    box12.score()
+    box13.score()
+    box14.score()
+    box15.score()
+    box16.score()
+    box17.score()
+    box18.score()
+    box19.score()
+    box20.score()
+    box21.score()
+    box22.score()
+    box23.score()
+    box24.score()
+    box25.score()
+    
+
 }
 function keyPressed() {
 
